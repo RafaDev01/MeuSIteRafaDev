@@ -152,18 +152,30 @@ body.active{
 
 /*================APRESENTAÇÃO-======================*/
 
+.apresentation--background{
+    background-image: url('https://img.freepik.com/fotos-gratis/computador-laptop-cinza-ligado_400718-47.jpg?w=996&t=st=1675006908~exp=1675007508~hmac=54f1fe85afffc411630c9266fca1ad71cee686d36b1df80912f47960cd7cf58b');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+}
+
 .apresentation--box{
     display: flex;
     justify-content: center;
     padding: 9.375rem;
     font-size: 30px;
     color: white;
+    height: 70vh;
+    background-color: #393939d5;
 }
 
 .apresentation{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-bottom: auto;
 }
 
 .ponto{
@@ -182,7 +194,11 @@ body.active{
     padding: 1.5rem;
     background-color: var(--color-curriculum);
     align-items: center;
+    position: absolute;
     width: 80%;
+    top: 0;
+    right: 7%;
+    margin-top: 80vh;
 }
 
 .text-content{

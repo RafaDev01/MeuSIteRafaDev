@@ -23,10 +23,10 @@ body.active{
     overflow: hidden;
 }
 
-.backgound{
-    background-color: rgb(75, 75, 75);
+.background{
+    background-color: rgba(75, 75, 75, 0.847);
+    position: relative;
 }
-
 
 .container{
     max-width: 80%;
@@ -152,6 +152,15 @@ body.active{
 
 /*================APRESENTAÇÃO-======================*/
 
+.portifolio--background{
+    background-image: url('https://img.freepik.com/fotos-gratis/conceito-empresarial-com-espaco-de-copia-mesa-de-escritorio-com-foco-na-caneta-e-quadro-de-analise-computador-caderno-xicara-de-cafe-na-mesa-tons-de-entrada-filtro-retro-foco-seletivo_1418-536.jpg?w=1380&t=st=1675036663~exp=1675037263~hmac=dc0e28b0b8d39dc7760c9618bae31988e1e13cf2c84ef513a5742ba98e4f8d06');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+}
+
 .apresentation--background{
     background-image: url('https://img.freepik.com/fotos-gratis/computador-laptop-cinza-ligado_400718-47.jpg?w=996&t=st=1675006908~exp=1675007508~hmac=54f1fe85afffc411630c9266fca1ad71cee686d36b1df80912f47960cd7cf58b');
     background-repeat: no-repeat;
@@ -171,11 +180,22 @@ body.active{
     background-color: #393939d5;
 }
 
+.portifolio--box--back{
+    font-size: 30px;
+    color: white;
+    height: 120vh;
+    background-color: #393939d5;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
 .apresentation{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-bottom: auto;
+    margin-bottom: 30vh;
 }
 
 .ponto{
@@ -185,6 +205,20 @@ body.active{
 }
 
 /*==============CURRICULO=========================*/
+
+.curriculum--box2{
+    display: flex;
+    flex-direction: column;
+    height: 30rem;
+    padding: 1.5rem;
+    background-color: var(--color-curriculum);
+    align-items: center;
+    position: absolute;
+    width: 80%;
+    top: 0;
+    right: 7%;
+    margin-top: 250vh;
+}
 
 .curriculum--box{
     display: flex;
@@ -202,6 +236,9 @@ body.active{
 }
 
 .text-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-size: 1.5rem;
     line-height: 1.5em;
     text-align: center;
@@ -226,13 +263,16 @@ body.active{
 }
 
 /*===========================PROFISSIONAL=====================*/
+.content--profissinal--box{
+    margin-top: 40vh;
+}
 
 .profissional--box{
-    padding: 150px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    z-index: -1;
 }
 
 .profissional{
@@ -265,26 +305,15 @@ body.active{
 
 /*====================PORTIFOLIO=====================*/
 
-.portifolio--box{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px 0;
-    margin-bottom: 50px;
-}
-
-
-.portifolio--box h3{
+.portifolio--box--back h3{
     color: white;
     font-size: 38px;
-    margin-bottom: 20px;
-    
+    margin-bottom: 5vh;
 }
 
 .projeto--boxes{
     display: flex;
+    margin-bottom: 20vh;
 }
 
 .projeto--portifolio{
@@ -321,23 +350,28 @@ body.active{
 
 /*==================CONTATO=====================*/
 
-.container--ctt{
-    background-color: var(--color-curriculum);
-    padding: 40px 40px 0px 40px;
+.engloba--form{
+    margin-bottom: 30vh;
 }
 
 .contato--box{
+    position: absolute;
     display: flex;
     justify-content: space-around;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
 }
 
 .contato--info{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-around;
     padding: 6px;
-    margin-right: 32px;
     color: white;
 }
 
@@ -594,7 +628,6 @@ body.active{
 
     .container--ctt{
         padding: .5rem;
-        margin: 0 auto;
     }
     
     .container{
